@@ -63,6 +63,10 @@ bot.on("message", function(message) {
     case "lol":
     message.channel.sendMessage("lol indeed")
     break;
+            
+    case "hehe":
+    message.channel.sendMessage("what you trying to do?")
+    break;
 
     }
 });
