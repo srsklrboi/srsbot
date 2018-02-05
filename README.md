@@ -1,2 +1,2 @@
 # srsbot
-eh, this bot is only for my discord server, i just need this to host my bot 24/7.
+This Git repository is just for my Discord server bot. I will be the only one who commits changes to this; please do not edit this repository.
