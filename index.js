@@ -43,11 +43,7 @@ bot.on("message", function(message) {
     case "--help":
     message.channel.sendMessage("Commands: (hi: replies 'Hi!') (bye: replies 'Bye bye scrub.') (cya: replies 'Cya scrub.') (--credits: sends you credits) (--ping: replies 'pong!')")
     break;
-
-    case "good night":
-    message.channel.sendMessage("Goodnight!")
-    break;
-
+    
     case "goodnight":
     message.channel.sendMessage("Goodnight!")
     break;
