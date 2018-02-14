@@ -13,6 +13,8 @@ client.on("ready", function(message) {
 client.on("message", function(message) {
     if(message.author.equals(client.user)) return;
     if (!message.content.startsWith(PREFIX)) return;
+    client.user.setStatus('Online")
+    client.user.setGame("&help")
 
     var args = message.content.substring(PREFIX.length).split(" ");
 
