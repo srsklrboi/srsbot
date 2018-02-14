@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const PREFIX = "&";
+const PREFIX = "";
 
 var client = new Discord.Client();
 
@@ -20,12 +20,20 @@ client.on("message", function(message) {
 
     switch (args[0].toLowerCase()) {
 
-    case "ping":
+    case "&ping":
     message.channel.sendMessage("pong!")
     break;
             
     case "hi":
     message.channel.sendMessage("hey")
+    break;
+            
+    case "&help":
+    message.channel.sendMessage("Help commands coming soon!")
+    break;
+            
+    case "&pong":
+    message.channel.sendMessage("ping?")
     break;
     }
 });
