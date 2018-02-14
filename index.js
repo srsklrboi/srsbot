@@ -20,6 +20,11 @@ client.on("message", function(message) {
 
     case "ping":
     message.channel.sendMessage("pong!")
+    break;
+            
+    case "hi":
+    message.channel.sendMessage("hey")
+    break;
     }
 });
 client.login(TOKEN)
