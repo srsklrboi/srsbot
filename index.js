@@ -8,13 +8,13 @@ const TOKEN = "NDEzMjMwODM0MDYxOTM0NTk3.DWVzfw.bWTpgGVyounGXXHb_01MT2ceeio";
 
 client.on("ready", function(message) {
     console.log("Logged in as ${client.user.tag}")
+    client.user.setStatus('Online')
+    client.user.setGame('&help')
 });
 
 client.on("message", function(message) {
     if(message.author.equals(client.user)) return;
     if (!message.content.startsWith(PREFIX)) return;
-    client.user.setStatus('Online")
-    client.user.setGame("&help")
 
     var args = message.content.substring(PREFIX.length).split(" ");
 
